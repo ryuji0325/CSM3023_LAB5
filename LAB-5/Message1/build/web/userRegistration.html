@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="processUser.jsp" method="post">
+            <fieldset>
+                <legend>User Details</legend>
+
+                <table>
+                    <tr>
+                        <td><label>Name</label></td>
+                        <td><input type="text" name="name" placeholder="Enter Firstname"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Surname</label></td>
+                        <td><input type="text" name="surname" placeholder="Enter Firstname"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password</label></td>
+                        <td><input type="password" name="pass" placeholder="Max 10 Characters" ></td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender</label></td>
+                        <td>
+                            <input type="radio" name="gender" id="male" value="Female"><label for='male'>Male</label>
+                            <input type="radio" name="gender" id="female" value="Male"><label for='female'>Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Type of User</label></td>
+                        <td>
+                            <select name="usertype">
+                                <option  value="Beginner" >Beginner</option>
+                                <option value="Intermediate" >Intermediate</option>
+                                <option  value="Advanced" >Advanced</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Prefer Language</label></td>
+                        <td>
+                            <input type="checkbox" name="lang" value="Malay" id='malay'><label for="malay">Malay</label>
+                            <input type="checkbox" name="lang" value="English"  id='english'><label for="english">English</label>
+                            <input type="checkbox" name="lang" value="Mandarin" id='mandarin'><label for="mandarin">Mandarin</label>
+                            <input type="checkbox" name="lang" value="Tamil" id='tamil'><label for="tamil">Tamil</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="submit">
+                            <input type="reset" name="reset">
+                        </td>
+                    </tr>
+                </table>
+
+            </fieldset>
+
+        </form>
+        <p>&COPY; 2016-Mohamad Nor;</p>
+
+    </body>
+</html>
